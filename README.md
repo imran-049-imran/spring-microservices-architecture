@@ -3,21 +3,20 @@
 💡 Overview
      A scalable microservices system implemented in Spring Boot 3+, featuring dynamic service registration, gateway‑based traffic management, declarative Feign clients, high‑performance      Redis caching, end‑to‑end Zipkin tracing, and centralized health monitoring.
 ```
-🚀 Tech Stack
-       Component	                            Technology
-☕ Backend Framework	                     Spring Boot 3+
-🔗 Inter-Service Communication	           OpenFeign
-⚙️ Service Discovery	                     Netflix Eureka
-🌉 API Gateway                    	           Spring Cloud Gateway (WebFlux)
-🧠 Caching	                               Redis
-📡 Distributed Tracing	                     Zipkin + Micrometer
-🧾 Monitoring	                               Spring Boot Admin
-🗃️ Database                                   MySQL
-🧰 Build                                      Tool Maven
-🐳 Runtime	                                Java 17+
+| Component                          | Technology                     |
+| ---------------------------------- | ------------------------------ |
+| ☕ **Backend Framework**            | Spring Boot 3+                 |
+| 🔗 **Inter-Service Communication** | OpenFeign                      |
+| ⚙️ **Service Discovery**           | Netflix Eureka                 |
+| 🌉 **API Gateway**                 | Spring Cloud Gateway (WebFlux) |
+| 🧠 **Caching**                     | Redis                          |
+| 📡 **Distributed Tracing**         | Zipkin + Micrometer            |
+| 🧾 **Monitoring**                  | Spring Boot Admin              |
+| 🗃️ **Database**                   | MySQL                          |
+| 🧰 **Build Tool**                  | Maven                          |
+| 🐳 **Runtime**                     | Java 17+                       |
+
 ```
-
-
 ```
 ## 📁 **Folder Structure**
 
@@ -63,18 +62,18 @@ Currency-microservices/
 └── screenshots/                  # Optional: add images of Zipkin & Admin dashboards
 
 ```
+```
+# 🧩 Microservice Architecture
 
-# 🧩Microservice Architecture
-```
-Service                         	Port	         Responsibility
-🗺️ Eureka Server                	8761	       Service discovery & registration
-🌉 API Gateway	                    8080	       Routes requests to downstream services
-💱 Currency Exchange Service    	8005	       Provides currency exchange rates
-🔄 Currency Conversion Service	8006	       Converts currency using Feign + Redis cache
-🧰 Redis Cache Server	          6379	       Stores cached conversion results
-📈 Zipkin Server	               9411	       Distributed tracing for all microservices
-🖥️ Spring Boot Admin Server    	9000	       Monitors and manages all microservices
-```
+| Service                            | Port     | Responsibility                              |
+| ---------------------------------- | -------- | ------------------------------------------- |
+| 🗺️ **Eureka Server**              | **8761** | Service discovery & registration            |
+| 🌉 **API Gateway**                 | **8080** | Routes requests to downstream services      |
+| 💱 **Currency Exchange Service**   | **8005** | Provides currency exchange rates            |
+| 🔄 **Currency Conversion Service** | **8006** | Converts currency using Feign + Redis cache |
+| 🧰 **Redis Cache Server**          | **6379** | Stores cached conversion results            |
+| 📈 **Zipkin Server**               | **9411** | Distributed tracing for all microservices   |
+| 🖥️ **Spring Boot Admin Server**   | **9000** | Monitors and manages all microservices      |
 
 ```
 # ⚙️ Project Flow
