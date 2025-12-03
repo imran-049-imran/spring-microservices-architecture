@@ -1,20 +1,22 @@
 # Currency Conversion Microservices Project
 
 💡 Overview
-A distributed Spring Boot microservices project demonstrating service discovery, API gateway routing, Feign-based inter-service communication, Redis caching, Zipkin tracing, and centralized monitoring.
-
+     A scalable microservices system implemented in Spring Boot 3+, featuring dynamic service registration, gateway‑based traffic management, declarative Feign clients, high‑performance      Redis caching, end‑to‑end Zipkin tracing, and centralized health monitoring.
+```
 🚀 Tech Stack
-Component	Technology
-☕ Backend Framework	Spring Boot 3+
-🔗 Inter-Service Communication	OpenFeign
-⚙️ Service Discovery	Netflix Eureka
-🌉 API Gateway	Spring Cloud Gateway (WebFlux)
-🧠 Caching	Redis
-📡 Distributed Tracing	Zipkin + Micrometer
-🧾 Monitoring	Spring Boot Admin
-🗃️ Database	MySQL
-🧰 Build Tool	Maven
-🐳 Runtime	Java 17+
+       Component	                            Technology
+☕ Backend Framework	                     Spring Boot 3+
+🔗 Inter-Service Communication	            OpenFeign
+⚙️ Service Discovery	                     Netflix Eureka
+🌉 API Gateway                    	       Spring Cloud Gateway (WebFlux)
+🧠 Caching	                                 Redis
+📡 Distributed Tracing	                   Zipkin + Micrometer
+🧾 Monitoring	                             Spring Boot Admin
+🗃️ Database                                 MySQL
+🧰 Build                                  Tool	Maven
+🐳 Runtime	                                Java 17+
+```
+
 
 ```
 ## 📁 **Folder Structure**
@@ -62,29 +64,33 @@ Currency-microservices/
 
 ```
 
-🧩Microservice Architecture
-Service	Port	Responsibility
-🗺️ Eureka Server	8761	Service Discovery & Registration
-🌉 API Gateway	8080	Routes requests to downstream services
-💱 Currency Exchange Service	8005	Provides currency exchange rates
-🔄 Currency Conversion Service	8006	Converts currency using Feign + Redis Cache
-🧰 Redis Cache Server	6379	Stores cached conversion results
-📈 Zipkin Server	9411	Distributed tracing for all microservices
-🖥️ Spring Boot Admin Server	9000	Monitors and manages all microservices
+# 🧩Microservice Architecture
+```
+Service                         	Port	         Responsibility
+🗺️ Eureka Server                	8761	       Service discovery & registration
+🌉 API Gateway	                  8080	       Routes requests to downstream services
+💱 Currency Exchange Service    	8005	       Provides currency exchange rates
+🔄 Currency Conversion Service	  8006	       Converts currency using Feign + Redis cache
+🧰 Redis Cache Server	            6379	       Stores cached conversion results
+📈 Zipkin Server	                9411	       Distributed tracing for all microservices
+🖥️ Spring Boot Admin Server    	  9000	       Monitors and manages all microservices
+```
 
-⚙️ Project Flow
-Request hits API Gateway → /api/v1/conversion
+```
+# ⚙️ Project Flow
+Request hits API Gateway → ``` /api/v1/conversion ```
 Routed to Currency Conversion Service
 Feign Client calls Currency Exchange Service
 Result calculated and cached in Redis
 Tracing sent to Zipkin, health to Admin Server
+```
+# 🧮 Caching Behavior
 
-🧮 Caching Behavior
 First request: DB + Redis store
 Subsequent requests: Redis cache
 TTL: 10 minutes (configurable)
-
-🖼️ Screenshots
+```
+# 🖼️ Screenshots
 
 # Eureka Server
 
@@ -102,6 +108,7 @@ TTL: 10 minutes (configurable)
 
 <img width="1920" height="1080" alt="zipkin-server" src="https://github.com/user-attachments/assets/4b90fe40-d52a-4a87-afd3-84dc46a31df1" />
 
+```
 
 ##⚡ How to Run Locally
 
@@ -143,7 +150,7 @@ Through Gateway:
 
 GET http://localhost:8080/conversion-service/conversion/from/USD/to/INR/amount/100
 
-🧩 Monitoring and Tracing
+# 🧩 Monitoring and Tracing
 
 View all services in Spring Boot Admin Dashboard
 
@@ -151,10 +158,10 @@ View API call traces in Zipkin UI
 
 All logs are traced automatically using management.zipkin.tracing.endpoint
 
-🏁 Future Enhancements
+# 🏁 Future Enhancements
 
 🔹 Add JWT authentication for secured endpoints 🔹 Integrate Grafana + Prometheus for advanced monitoring 🔹 Dockerize all services for containerized deployment
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Imran Attar 📧 Developer | Spring Boot Enthusiast
