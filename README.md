@@ -6,14 +6,14 @@
 🚀 Tech Stack
        Component	                            Technology
 ☕ Backend Framework	                     Spring Boot 3+
-🔗 Inter-Service Communication	            OpenFeign
+🔗 Inter-Service Communication	           OpenFeign
 ⚙️ Service Discovery	                     Netflix Eureka
-🌉 API Gateway                    	       Spring Cloud Gateway (WebFlux)
-🧠 Caching	                                 Redis
-📡 Distributed Tracing	                   Zipkin + Micrometer
-🧾 Monitoring	                             Spring Boot Admin
-🗃️ Database                                 MySQL
-🧰 Build                                  Tool	Maven
+🌉 API Gateway                    	           Spring Cloud Gateway (WebFlux)
+🧠 Caching	                               Redis
+📡 Distributed Tracing	                     Zipkin + Micrometer
+🧾 Monitoring	                               Spring Boot Admin
+🗃️ Database                                   MySQL
+🧰 Build                                      Tool Maven
 🐳 Runtime	                                Java 17+
 ```
 
@@ -68,12 +68,12 @@ Currency-microservices/
 ```
 Service                         	Port	         Responsibility
 🗺️ Eureka Server                	8761	       Service discovery & registration
-🌉 API Gateway	                  8080	       Routes requests to downstream services
+🌉 API Gateway	                    8080	       Routes requests to downstream services
 💱 Currency Exchange Service    	8005	       Provides currency exchange rates
-🔄 Currency Conversion Service	  8006	       Converts currency using Feign + Redis cache
-🧰 Redis Cache Server	            6379	       Stores cached conversion results
-📈 Zipkin Server	                9411	       Distributed tracing for all microservices
-🖥️ Spring Boot Admin Server    	  9000	       Monitors and manages all microservices
+🔄 Currency Conversion Service	8006	       Converts currency using Feign + Redis cache
+🧰 Redis Cache Server	          6379	       Stores cached conversion results
+📈 Zipkin Server	               9411	       Distributed tracing for all microservices
+🖥️ Spring Boot Admin Server    	9000	       Monitors and manages all microservices
 ```
 
 ```
