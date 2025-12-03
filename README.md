@@ -86,16 +86,17 @@ TTL: 10 minutes (configurable)
 
 🖼️ Screenshots
 🧩 Eureka Server
-Eureka Server
+<img width="1920" height="1080" alt="eureka-server" src="https://github.com/user-attachments/assets/038e640d-02e5-4967-bf25-01d1cc489a0a" />
 
 🧩 Admin Server
-Admin Server
+<img width="1920" height="1080" alt="admin-server-2" src="https://github.com/user-attachments/assets/9bbe90ac-32dc-4f97-9d0d-cf03c7c862d0" />
 
 🧩 Conversion Service (Postman Test)
-Conversion Postman
+<img width="1920" height="1080" alt="conversion-postman" src="https://github.com/user-attachments/assets/a4d9979d-e4d4-4d04-934b-5b3b6d0dde1a" />
 
 🧩 Zipkin Server
-Zipkin Server
+<img width="1920" height="1080" alt="zipkin-server" src="https://github.com/user-attachments/assets/4b90fe40-d52a-4a87-afd3-84dc46a31df1" />
+
 
 ##⚡ How to Run Locally
 
